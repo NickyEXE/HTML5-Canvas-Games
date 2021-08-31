@@ -148,9 +148,9 @@ With the core game loop in place, let's work on giving our game objects a nicer 
 
 ## Creating Game Objects
 
-We can take advantage of some object oriented programming techniques to encapsulate the data and behavior of our game objects and give ourselves a nice interface for working with them. Let's start with the `Player` class (it might be a good idea to create a separate file for this class). 
+We can take advantage of some object oriented programming techniques to encapsulate the data and behavior of our game objects and give ourselves a nice interface for working with them. Let's start with the `Player` class (it might be a good idea to create a separate file for this class).
 
-All our game classes will need a few of the same properties: 
+All our game classes will need a few of the same properties:
 - a reference to the canvas context so they can draw on it
 - some coordinates to determine their position on the canvas
 - an update method to change their positions
@@ -317,7 +317,7 @@ function loop() {
 }
 ```
 
-One obstacle wouldn't make for a very interesting game, so let's re-write our code a bit to add a new obstacle at after a random number of frames. We'll need a counter to keep track of how many times our loop has run, a variable to keep track of when to add the next obstacle, and an array to keep track of all our obstacles. 
+One obstacle wouldn't make for a very interesting game, so let's re-write our code a bit to add a new obstacle at after a random number of frames. We'll need a counter to keep track of how many times our loop has run, a variable to keep track of when to add the next obstacle, and an array to keep track of all our obstacles.
 
 ```js
 let frames = 0
